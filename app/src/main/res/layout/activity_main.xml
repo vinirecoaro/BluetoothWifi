@@ -7,12 +7,60 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_bluetooth_devices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="5dp"
+        android:text="@string/available_bluetooth_devices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_bluetooth_devices"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bt_search_bluetooth_devices"
+        app:layout_constraintTop_toBottomOf="@id/tv_bluetooth_devices" />
+
+    <Button
+        android:id="@+id/bt_search_bluetooth_devices"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/search_devices"
+        app:layout_constraintBottom_toTopOf="@id/view_separator"/>
+    <View
+        android:id="@+id/view_separator"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_wifi_connections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/available_wi_fi_connections"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_separator" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_wifi_connections"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bt_search_wifi_connections"
+        app:layout_constraintTop_toBottomOf="@id/tv_wifi_connections" />
+
+    <Button
+        android:id="@+id/bt_search_wifi_connections"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/search_wifi_connections"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

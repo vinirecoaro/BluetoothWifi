@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">BluetoothWifi</string>
+    <string name="available_bluetooth_devices">Available Bluetooth Devices</string>
+    <string name="available_wi_fi_connections">Available Wi-Fi Connections</string>
+    <string name="search_new_devices">Search New devices</string>
+    <string name="search_devices">search devices</string>
+    <string name="search_wifi_connections">search WiFi connections</string>
 </resources>

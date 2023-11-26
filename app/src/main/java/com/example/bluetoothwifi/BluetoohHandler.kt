@@ -1,9 +1,12 @@
 import android.Manifest
+import android.app.Activity
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothDevice
 import android.content.Context
 import android.content.pm.PackageManager
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.bluetoothwifi.MainActivity
 
 class BluetoothHandler(private val context: Context, private val bluetoothAdapter: BluetoothAdapter) {
 
@@ -23,4 +26,6 @@ class BluetoothHandler(private val context: Context, private val bluetoothAdapte
             return emptySet()
         }
     }
+
+
 }
